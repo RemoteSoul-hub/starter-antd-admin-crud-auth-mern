@@ -58,7 +58,7 @@ exports.profile = async (req, res) => {
       return res.status(404).json({
         success: false,
         result: null,
-        message: "couldn't found  admin Profile ",
+        message: "couldn't find  admin Profile ",
       });
     }
     let result = {

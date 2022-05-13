@@ -53,6 +53,18 @@ export default function AdminForm({ isUpdateForm = false }) {
       >
         <Input autoComplete="off" />
       </Form.Item>
+      <Form.Item
+        name="phone"
+        label="Phone"
+        rules={[
+          {
+            required: true,
+            message: "Please input your phone!",
+          },
+        ]}
+      >
+        <Input />
+      </Form.Item>
     </>
   );
 }

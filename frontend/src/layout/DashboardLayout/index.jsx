@@ -10,7 +10,7 @@ const { Content } = Layout;
 export default function DashboardLayout({ children }) {
   return (
     <Layout className="site-layout">
-      <HeaderContent />
+      
       <Content
         style={{
           padding: "30px 40px",

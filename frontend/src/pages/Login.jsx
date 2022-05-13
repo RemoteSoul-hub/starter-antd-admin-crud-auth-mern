@@ -33,9 +33,10 @@ const LoginPage = () => {
                 padding: "150px 0 180px",
                 maxWidth: "360px",
                 margin: "0 auto",
+                backgroundColor: "",
               }}
             >
-              <h1>Login</h1>
+              <h1>Connexion</h1>
               {/* {error && (
                 <ErrorNotice
                   message={error}
@@ -58,7 +59,7 @@ const LoginPage = () => {
                     rules={[
                       {
                         required: true,
-                        message: "Please input your Email!",
+                        message: "Veuillez remplir votre email!",
                       },
                     ]}
                   >
@@ -73,7 +74,7 @@ const LoginPage = () => {
                     rules={[
                       {
                         required: true,
-                        message: "Please input your Password!",
+                        message: "Veuillez remplir votre mot de passe!",
                       },
                     ]}
                   >
@@ -86,12 +87,9 @@ const LoginPage = () => {
                   </Form.Item>
                   <Form.Item>
                     <Form.Item name="remember" valuePropName="checked" noStyle>
-                      <Checkbox>Remember me</Checkbox>
+                      <Checkbox>Restez connecté</Checkbox>
                     </Form.Item>
 
-                    <a className="login-form-forgot" href="">
-                      Forgot password
-                    </a>
                   </Form.Item>
 
                   <Form.Item>
@@ -101,9 +99,9 @@ const LoginPage = () => {
                       className="login-form-button"
                       loading={isLoading}
                     >
-                      Log in
+                      Me connecter
                     </Button>
-                    Or <a href="">register now!</a>
+                    pas encore inscrit? <a href="">m'inscrire</a>
                   </Form.Item>
                 </Form>
               </div>
@@ -111,10 +109,6 @@ const LoginPage = () => {
           </Col>
         </Row>
 
-        <Footer style={{ textAlign: "center" }}>
-          Open Source CRM based on AntD & React ©2020 Created by Salah Eddine
-          Lalami
-        </Footer>
       </Layout>
     </>
   );

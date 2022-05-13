@@ -6,7 +6,7 @@ const router = express.Router();
 const adminController = require("../controllers/adminController");
 const clientController = require("../controllers/clientController");
 
-const leadController = require("../controllers/leadController");
+const eventController = require("../controllers/eventController");
 const productController = require("../controllers/productController");
 
 //_______________________________ Admin management_______________________________
@@ -31,13 +31,13 @@ router.route("/client/delete/:id").delete(catchErrors(clientController.delete));
 router.route("/client/search").get(catchErrors(clientController.search));
 router.route("/client/list").get(catchErrors(clientController.list));
 
-//_____________________________________ API for leads ___________________________
-router.route("/lead/create").post(catchErrors(leadController.create));
-router.route("/lead/read/:id").get(catchErrors(leadController.read));
-router.route("/lead/update/:id").patch(catchErrors(leadController.update));
-router.route("/lead/delete/:id").delete(catchErrors(leadController.delete));
-router.route("/lead/search").get(catchErrors(leadController.search));
-router.route("/lead/list").get(catchErrors(leadController.list));
+//_____________________________________ API for Events ___________________________
+router.route("/event/create").post(catchErrors(eventController.create));
+router.route("/event/read/:id").get(catchErrors(eventController.read));
+router.route("/event/update/:id").patch(catchErrors(eventController.update));
+router.route("/event/delete/:id").delete(catchErrors(eventController.delete));
+router.route("/event/search").get(catchErrors(eventController.search));
+router.route("/event/list").get(catchErrors(eventController.list));
 
 //_____________________________________ API for products ___________________________
 router.route("/product/create").post(catchErrors(productController.create));

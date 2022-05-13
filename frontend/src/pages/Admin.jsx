@@ -7,7 +7,7 @@ export default function Admin() {
   const entity = "admin";
   const searchConfig = {
     displayLabels: ["name", "surname"],
-    searchFields: "email,name,surname",
+    searchFields: "email,name,surname,phone",
     outputValue: "_id",
   };
 
@@ -19,12 +19,14 @@ export default function Admin() {
     { title: "Name", dataIndex: "name" },
     { title: "Surname", dataIndex: "surname" },
     { title: "Email", dataIndex: "email" },
+    { title: "Phone", dataIndex: "phone" },
   ];
 
   const dataTableColumns = [
     { title: "Name", dataIndex: "name" },
     { title: "Surname", dataIndex: "surname" },
     { title: "Email", dataIndex: "email" },
+    { title: "Phone", dataIndex: "phone" },
   ];
   const ADD_NEW_ENTITY = "Add new admin";
   const DATATABLE_TITLE = "Admins List";

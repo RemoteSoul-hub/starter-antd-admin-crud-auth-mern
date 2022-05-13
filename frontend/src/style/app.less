@@ -2,10 +2,37 @@
 @import "./partials/collapseBox.less";
 @import "./partials/dashboard.less";
 
+.logo-ctn {
+  height: 50px;
+  background-color: #2B3E59;
+  padding-top: 10px;
+}
+
 .logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px;
+  padding: 0.5rem;
+  height: 30px;
+  background-image: url('./logo-rcg.png');
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem;
+  color: white;
+}
+
+.font-bold {
+  font-weight: 600;
 }
 
 .site-layout .site-layout-background {
@@ -104,4 +131,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.hidden {
+  display: none;
 }

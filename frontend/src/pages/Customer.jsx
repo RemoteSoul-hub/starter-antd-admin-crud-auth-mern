@@ -12,7 +12,7 @@ function Customer() {
   };
 
   const panelTitle = "Customer Panel";
-  const dataTableTitle = "Customers Lists";
+  const dataTableTitle = "LISTE DES CLIENTS";
   const entityDisplayLabels = ["company"];
 
   const readColumns = [
